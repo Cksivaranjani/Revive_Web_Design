@@ -1,0 +1,322 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {  
+    text-decoration: none; 
+    color: #fff; 
+}
+ul {  
+    list-style: none; 
+}
+.bold {  
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 700; 
+}
+.nav {  
+    font-family: 'Raleway', sans-serif; 
+}
+/* Header */
+.logo {  
+    vertical-align: middle; 
+    padding-right: 65%; 
+}
+.navmenu {
+  color: hsl(240, 46%, 18%);
+  padding-right: 3%;
+  font-size: 1.1rem;
+}
+.navmenu:hover {  
+    color: hsl(0, 0%, 0%); 
+    font-weight: 500;
+}
+.header {  
+    padding: 3% 5%; 
+}
+/* Main Content */
+.illustration-container {
+  background-image: url('images/bg-curve-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 114px;
+  width: 100%;
+  margin: 0;
+  margin-top: 5%;
+  padding: 0;
+}
+.btn {
+  width: 40%;
+  background: hsl(224, 93%, 38%);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 2% 7%;
+  vertical-align: middle;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.btn:hover {
+  background: hsl(239, 70%, 64%);
+}
+.email {
+  width: 50%;
+  border: 1px solid hsl(243, 87%, 12%);
+  border-radius: 4px;
+  padding: 15px 17px;
+  margin-right: 2%;
+  font-size: 1.05rem;
+}
+.img {  
+    width: 100%; 
+}
+.link {
+  color: hsl(170, 51%, 26%);
+  text-decoration: underline;
+  font-size: 1.25rem;
+}
+.link:hover {  
+    color: hsl(170, 45%, 43%);
+}
+.mainsection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+}
+.text {  
+    font-size: 1.25rem; 
+    margin: 7% 0; 
+}
+.title {  
+    font-size: 2.5rem; 
+    color: hsl(243, 87%, 12%); 
+}
+.section-2 {  
+    background-color: hsl(240, 75%, 98%); 
+    padding-top: 0; 
+}
+.section-2 .section-left {  
+    padding-top: 0; 
+    margin-top: 0; 
+}
+.section-3 {  
+    background-color: hsl(238, 22%, 44%); 
+    color: #fff; }
+.section-3 .btn {  
+    display: inline-block; 
+    width: fit-content; 
+}
+.section-3 .email {
+  display: inline-block;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+.section-3 .title {  
+    color: #fff; 
+}
+.section-left {  
+    flex: 1; 
+    margin-right: 5%; 
+    margin-top: 5%; 
+}
+.section-right {  
+    flex: 1; 
+}
+/* Card */
+.card {
+  width: 60%;
+  text-align: left;
+  background-color: #fff;
+  color: hsl(243, 87%, 12%);
+  margin-top: 5%;
+  padding: 5%;
+  box-shadow: 0 0 15px 2px hsl(0, 0%, 75%);
+  border-radius: 10px;
+}
+.cardfooter {  
+    width: 100%; 
+}
+.cardfooterattribute {  
+    padding-top: 7%; 
+}
+.cardfooteravatar {
+  float: left;
+  width: 15%;
+  border-radius: 50%;
+  padding: 6%;
+  height: 50px;
+  width: 50px;
+}
+/* Footer */
+.item {  
+    padding-bottom: 10%; 
+}
+.icon{
+    padding-right: 7px;
+}
+.footer-logo {
+  padding: 5% 3% 1%;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+.footer-main {  
+    display: flex; 
+    justify-content: space-around; 
+}
+.footer-nav {  
+    display: grid; 
+}
+.footermenu {  
+    padding-bottom: 8%; 
+}
+.footermenu:hover{
+    color: hsl(238, 22%, 44%);
+}
+.footer {
+  background-color: hsl(243, 87%, 12%);
+  color: #fff;
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+.social-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5%;
+}
+.sociallink {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  text-align: center;
+  display: inline-block;
+  margin: 1px;
+}
+.sociallink:hover{
+    color: hsl(238, 22%, 44%); ;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {  
+    padding-right: 40%; 
+}
+
+  .email {
+    display: inline-block;
+    margin: auto;
+    width: 80%;
+  }
+
+  .section-1 .btn {
+    display: inline-block;
+    margin-top: 5%;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardfooterattribute {  
+    padding-top: 5%; 
+}
+  .logo {  
+    padding-right: 30%; 
+}
+}
+
+@media screen and (max-width: 414px) {
+  .card {  
+    margin: 8% auto; 
+}
+  .footer-logo {  
+    padding: 10%; 
+}
+  .footer-main {  
+    display: block; 
+}
+  .footer-nav {  
+    padding-left: 10%; 
+}
+  .logo {  
+    width: 30%; 
+    padding-right: 10%; 
+}
+  .navmenu {  
+    font-size: 1rem; 
+}
+
+  .illustration-container {
+    background-image: url('images/bg-curve-mobile.svg');
+    height: 53px;
+  }
+
+  .main-content {  
+    text-align: center; 
+}
+  .text {  
+    font-size: 1rem; 
+}
+  .title {  
+    font-size: 1.75rem; 
+    line-height: 1.5; 
+}
+  .mainsection {  
+    flex-direction: column-reverse; 
+}
+  .nav1 {  
+    padding-top: 5%; 
+}
+  .nav2 {  
+    padding-top: 8%; 
+}
+  .section-1 {  
+    margin-bottom: 20%; 
+}
+  .section-2 .title {  
+    font-size: 1.25rem; 
+}
+  .section-3 {  
+    flex-direction: column; 
+}
+  .section-3 .section-right {  
+    padding-top: 10%; 
+    padding-bottom: 10%; 
+}
+  .section-left {  
+    margin: 0; 
+}
+  .section-right {  
+    padding-top: 20%; 
+}
+  .header {  
+    padding: 5%; 
+}
+  .social-menu {  
+    display: block; 
+    padding: 5% 30% 2%; 
+}
+  .sociallink {  
+    margin-right: 5%; 
+}
+}
+
+@media screen and (max-width: 375px) {
+  .navmenu {  
+    font-size: .9rem; 
+}
+}
+
+@media screen and (max-width: 320px) {
+  .navmenu {  
+    font-size: .8rem; 
+}
+  .social-menu {  
+    padding-left: 25%; 
+    padding-right: 25%; 
+}
+}
